@@ -1,7 +1,9 @@
 //a program for generating password based on certain passphrase
 
-toHash("Rezwin RAfeek");
+toHash("Amazon");
+toNum("Amazon");
 
+//toHash is a function which converts a string to hash
 function toHash(text)
     {
        var hash = "";
@@ -63,4 +65,69 @@ function toHash(text)
                 default :hash = hash + text[i];
                 }
                 document.writeln(hash);
+    }
+
+
+
+    function toNum(text)
+    {
+       var num = "";
+         for( i = 0; i < text.length ; ++ i)
+         switch(text[i])
+                {
+                case "A" :    
+                case "a" : num = num + "0";break;
+                case "B" :
+                case "b" : num = num + "1";break;
+                case "C" :
+                case "c" : num = num + "2";break;
+                case "D" :
+                case "d" : num = num + "3";break;
+                case "E" :
+                case "e" : num = num + "4";break;
+                case "F" :
+                case "f" : num = num + "5";break;
+                case "G" :
+                case "g" : num = num + "6";break;
+                case "H" :
+                case "h" : num = num + "7";break;
+                case "I" :
+                case "i" : num = num + "8";break;
+                case "J" :
+                case "j" : num = num + "9";break;
+                case "K" :
+                case "k" : num = num + "10";break;
+                case "L" :
+                case "l" : num = num + "11";break;
+                case "M" :
+                case "m" : num = num + "12";break;
+                case "N" :
+                case "n" : num = num + "13";break;
+                case "O" :
+                case "o" : num = num + "14";break;
+                case "P" :
+                case "p" : num = num + "15";break;
+                case "Q" :
+                case "q" : num = num + "16";break;
+                case "R" :
+                case "r" : num = num + "17";break;
+                case "S" :
+                case "s" : num = num + "18";break;
+                case "T" :
+                case "t" : num = num + "19";break;
+                case "U" :
+                case "u" : num = num + "20";break;
+                case "V" :
+                case "v" : num = num + "21";break;
+                case "W" :
+                case "w" : num = num + "22";break;
+                case "X" :
+                case "x" : num = num + "23";break;
+                case "Y" :
+                case "y" : num = num + "24";break;
+                case "Z" :
+                case "z" : num = num + "25";break;
+                default :num = num + text[i];
+                }
+                document.writeln(num);
     }
