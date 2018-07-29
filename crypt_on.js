@@ -64,7 +64,7 @@ function toHash(text)
                 case "z" : hash = hash + "7";break;
                 default :hash = hash + text[i];
                 }
-                document.writeln(hash);
+    return hash;
     }
 
 
@@ -129,7 +129,8 @@ function toHash(text)
                 case "z" : num = num + "25";break;
                 default :num = num + text[i];
                 }
-                document.writeln(num);
+    return num;
+                
     }
 
 
@@ -140,6 +141,13 @@ function toHash(text)
         var pass2 = document.getElementById("passphrase2").value;
         var pass3 = document.getElementById("passphrase3").value;
 
-        var pass = pass1+pass2+pass3;
+        pass4 = toNum(pass2);   //cnvrts to its num equivalent
+        pass1 = toHash(pass1);  //cnvrts to
+        pass2 = toHash(pass2);  //hash
+        pass3 = toHash(pass3);  //equivalent
+       
+
+        var pass = "S"+pass1+pass2+pass3+pass4+"E";
+        pass=pass.split("").reverse().join("");      //used to reverse the string
         document.getElementById("output").value=pass;
       }
