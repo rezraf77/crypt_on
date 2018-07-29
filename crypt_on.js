@@ -131,3 +131,15 @@ function toHash(text)
                 }
                 document.writeln(num);
     }
+
+
+
+    function generate()
+      {
+        var pass1 = document.getElementById("passphrase1").value;
+        var pass2 = document.getElementById("passphrase2").value;
+        var pass3 = document.getElementById("passphrase3").value;
+
+        var pass = pass1+pass2+pass3;
+        document.getElementById("output").value=pass;
+      }
