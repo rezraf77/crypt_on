@@ -1,7 +1,7 @@
 //a program for generating password based on certain passphrase
 
-toHash("Amazon");
-toNum("Amazon");
+//toHash("Amazon");
+//toNum("Amazon");
 
 //toHash is a function which converts a string to hash
 function toHash(text)
