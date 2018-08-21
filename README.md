@@ -1,4 +1,4 @@
-![Crypt on Logo](/images/logo.png)
+![Crypt on Logo](/images/logo/lock.png)
 
 # crypt_on
 
