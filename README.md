@@ -1,4 +1,3 @@
-![Crypt on Logo](/images/logo/lock.png)
 
 # crypt_on
 
@@ -16,4 +15,8 @@ It is developed using
 * javascript
 * bootstrap framework
 *
+
+## Screenshot
+
+![Crypt on Screenshot](/images/screenshot.png)
 
