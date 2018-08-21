@@ -1,7 +1,8 @@
 body
 {
-    background:#777;
+ background-image:url('../images/back.png');
 }
+
 
 
 header
@@ -14,8 +15,8 @@ header
 #button1
 {
     margin-bottom: 30px;
-    background: #515864;
-    border-color: #777;
+    background: #34495e;
+    border-color: #34495e;
 }
 
 
@@ -26,6 +27,7 @@ header
     background: white;
     border-radius: 10px;
 }
+
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
