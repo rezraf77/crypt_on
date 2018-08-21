@@ -1,3 +1,5 @@
+![Crypt on Logo](/images/logo.png)
+
 # crypt_on
 
 ## Overview
