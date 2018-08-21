@@ -5,16 +5,18 @@
     
     <title>crypt_on</title>
 
-    <script src="crypt_on.js"></script>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="scripts/crypt_on.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     
 </head>
 <body>
 
-<div class="main">
+<div id="main">
+
+    <div class="form">
     <h1>CRYPT_ON</h1>        <!--main heading-->
 
-    <form name = "passphrases">    <!--the form where youu enter all the passphrases-->
+    <form name = "passphrases">    <!--the form where you enter all the passphrases-->
         <p>
             <label for="passphrase1">PASSPHRASE 1</label>
             <input type="password" id="passphrase1" name="passphrase1" >
@@ -28,14 +30,16 @@
             <input type="password" id="passphrase3" name="passphrase3"> 
         </p>
         <p>
-            <button type="button"  ondblclick="generate()">Gener8</button>
+            <button type="button" id="submit" ondblclick="generate()"></button>
         </p>
+        </div> <!--form end-->
+        <div id="result">
         <p>
-            <label>RESULT</label>
             <input type="text" id="output" style="width: 500px"> 
         </p>
+        </div> <!--Result div end-->
     </form>
-
+    
 </div>
 </body>
 </html>
